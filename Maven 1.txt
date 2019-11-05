@@ -1,0 +1,76 @@
+M a v e n:
+
+A .jar file is a collection of files of the whole Java project. 
+(Think, where are Java coffee beans stored).
+
+Creating a Maven project:
+
+- Group ID: "com.nationwide"
+- Artefact ID: [Name]
+
+Project folders:
+-  src/main/Java
+-  src/main/resource
+-  src/test/java
+-  src/test/resource
+-  pom.xml
+
+Calculator specs:
+
+- Add two numbers, return result
+- Subtract two numbers, return result
+
+T.D.D: Test Driven Development, development via testing
+
+JUnit testing:
+
+On mvnrepository.com serach "JUnit", and click on "JUnit", not the 1st link, the second link. Click JUnit 4.1.2.
+Copy and paste the entire section, including the dependency parts into your 
+dependencies section
+
+0.0.1
+
+To create a test:
+
+@Test (CTRL space and select the first option)
+
+			Java Class Availabilty Guide:
+
+		public		protected	default		private
+
+world		Yes		No		No		No
+
+package		Yes		Yes		No		No
+
+subclass	Yes		Yes		Yes		No
+
+class		Yes		Yes		Yes		Yes
+
+Test Guide:
+
+Red: Failed
+Green: Passed
+Blue: Refactor
+
+Note: Just because a test has passed, doesn't mean it's actually testing something. Case in point:
+	your first attempt at the Java Assessment.
+
+You may have to import certain methods such as assertEquals (or other assertStatement) into the class you are using.
+
+				Test based development: 
+Ensures testing you go. The tests are in place to begin with so as you create the
+code you're testing it to ensures it passes the tests, RATHER, than the test passes
+					the code.
+
+A java package is a bundle of multiple class files. Creating a package saves having multiple different
+class files all over the place.
+
+Setting up a test file, when you have more experience set up a test first. Then the main code.
+
+Uploading to Git:
+
+Right click the relavnt folder, Properties, click on the folder icon and it will take you the folder where your
+project is based. Click into it, this is where you init the Git. You only upload the "pom.xml" and "src" files.
+
+Type in the terminal "touch .git ignore", open the gitignore file with notepad and copy files over (don't forget to save the file
+until you are left with the src, pom.xml and .gitignore files when you run the git status command

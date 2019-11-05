@@ -1,0 +1,1 @@
+select * from rock_playlists;

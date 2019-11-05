@@ -1,0 +1,12 @@
+The 7 Testing Principles:
+
+1. Testing shows us the presence of bugs
+2. Exhaustive testing is not possible my friend
+3. Defect clustering (80% of errors come from 20% of your code, basically). Test the shit out of error
+	prone code.
+4. Pesticide paradox, constantly update your tests to find new bugs else coders will hard code around your tests
+	if you don't change them.
+5. Early testing. Test Driven Developement, saves money and time as it catches problems earlier.
+6. Testing is context dependent. E.g. you wouldn't record vocals with a D112. 
+7. No errors fallacy. Even though there's no errors doesn't mean it's good to go, e.g. yeah it works but if it
+	forever to load the page no one's going to want to use it are they?

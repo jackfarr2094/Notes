@@ -1,0 +1,46 @@
+Uploading a site to the cloud:
+
+New VM Instance:
+Name: demo-2
+Region: europe-west2 (London)
+Zone: europe-west2-b
+
+Machine Confirguration:
+
+General All Purpose
+n1-standard-1
+
+Boot disk: Ubuntu 16.04
+
+Firewall:
+ Allow HTTP traffic
+
+[CREATE]
+
+Click SSH
+
+Linux commands:
+
+ - sudo apt update (run before any installation)
+ - sudo apt install -y apache2
+ - cd /var/www/html/
+ - ls
+ - sudo rm index.html
+ - touch index.html
+ - cd ..
+ - ll
+ - sudo chmod 757 html/ 
+(changes permissions so you can write to the html file which you initially wouldn't have the permissions to do)
+ - cd html/
+ - touch index.html
+ - echo "hello" > index.html
+ - cat index.html
+ - cd ~
+ - git clone https://github.com/jackfarr2094/IndividualProject1.git
+ - cd IndividualProject1
+ - ls
+ - git pull origin master from your url
+ - mv Projectsite2.html index.html
+ - cp index.html /var/www/html/
+
+- sudo service jenkins restart

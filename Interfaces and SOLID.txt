@@ -1,0 +1,102 @@
+
+
+With interfaces, you can implement more than one interface 
+with an abstract class. The variable can be anything. 
+Interface is an abstract class.
+
+Interfaces are abstarct by default.
+
+You cannot create the object the object of an interface.
+In the child classes of an interface you can only store the objects
+of the child classes of an interface.
+
+A class cannot have more than one parent class.
+
+S.O.L.I.D:
+
+ S = Single responsibilty: things should only have a single responsibility. 
+	
+	TL:DR: Every class should only have  one purpose. 
+	Aim to keep classes small, and streamlined where possible. Keep it Simple Stupid.
+
+ O =  Open/Closed principle: Open for extension, closed for modification. 
+	Once the app is running you don't need to touch it, it can be extended by adding classes but the
+	method remains the same.
+
+e.g. public interface Shape {
+	public void draw();
+	}
+
+class Rect {
+
+	public void addtoScreen (Shape shape) {
+		shape draw ();
+	}
+
+class Rect implements Shape {
+	public void draw () {
+	// draw Rect
+		}
+	}
+
+class Circle implements Shape {
+	public void draw () {
+	// draw Rect
+		}
+	}
+
+class App {
+	public static void main (String args []) {
+	Paint application = new Paint();
+	application.addToScreen (new Rect());
+	application.addToScreen (new Circle ());
+	}
+}
+
+Shape r = new Rect();
+r.draw; //
+
+Shape c = new Circle ();
+c.draw; //
+
+	Code like this is easily swapped out and in, for example to draw a triangle you create a new Triangle class, 
+	and add "application.addToScreen (new Triangle ());"
+
+- L: Listov's Subsititution Principle: the base class should be directly subsitutable with the parent class.
+
+	E.g: A bird class. If you then create a child class for "flying" 
+		does this apply to for example, ostriches. No. So split the classes up into
+		flying, non-flying methods, weather or not they have feathers yadda yadda yadda.
+
+- I: Interface Segregation: Using interfaces to seperate classes instead of the inheritance structure.
+	E.g. Cats
+		- Interface: Kill Humans
+		- Interface: Meow
+		- Interface: packAnimal
+
+	Adding House Cat will extend the main Cat class and implement "Meow".
+
+	public interface Meow {
+		public void speak() {
+			
+The main idea is to not put things in an interface which do not need to be there 
+	so separate out your interfaces into smaller more manageable ones. 
+
+- D: Dependancy Inversion: If a class calls a class, that class is dependent on that class. In this situation 
+		it's hard to switch things out. When a class calls an interface, this interface can then call
+		either of it's dependent classes, neither of which are dependent on the main class. Thus, making it
+		easier to switch them in and out. 
+
+E.g. 
+
+	public interface Person {
+		public void speak ()
+	}
+
+To recap:
+
+- S: Single responsibilty
+- O: Open/closed principle
+- L: Liska's substitution principal
+- I: Interface Segregation
+- D: Dependancy Inversion

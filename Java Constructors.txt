@@ -1,0 +1,49 @@
+Java - constructors: A method that will execute after the creation of an object. 
+Name of constructor = name of return type.
+
+If there are no constructors in the class Java will create one: "public ____ () {" which won't do anything.
+When creating the object e.g. Account x = new Account you'll be calling a constructor that doesn't exist and Java
+will give an error. Java needs to know which one is the constructor, which can be done giving it the same name
+as the class. They cannot have a return type.
+
+E.g.
+
+class College {
+	public void Message () {
+		System.out.println("hello my friends");
+	}
+	public College
+		System.out.println("the nationwide");
+
+		College x = new College ();
+
+The object will be created then it will execute the constructor. 
+So it will print "nationwide" then " hello my friends".
+
+Method overloading: a Class can more than one method with the same name. The signatures must be different for 
+the programme to run so that Java can determine which method it is running. E.g.
+
+	class Java2 {
+		public void Message () {
+			System.out.println("my friends hello");
+		}
+
+	Java 2 R = Java2();
+		R.Message(); (the 1st method will execute)
+	}
+	public Message(int a) { (now the second method will execute as the parameters are different.
+		System.out.println("Example");
+		}
+
+Signature: return type and parameters.
+e.g.	public int [return type] add (int a, int b) [parameters];
+
+	class Accounts {
+	public void Tax () {
+		System.out.println("Tax Rate:" + 21%);
+	}
+
+Access specifiers: Private, public, protected and default.
+
+Private is the most secure of these.
+	

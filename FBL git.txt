@@ -1,0 +1,4 @@
+Git Branch model:
+
+Master: the main branch accessible to everyone.
+Developer Branch: the testing area branch where once you've tested it you can merge with the master

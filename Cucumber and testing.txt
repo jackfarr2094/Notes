@@ -1,0 +1,19 @@
+Cucumber - behaviour driven development.
+	- Builds on top test driven development
+	- Runs our tests
+	- Gherkin: takes the feature from text to test
+
+Cucumber makes use of the given, when, then canvas:
+
+	- Given: a pre-condition
+	- When: an action is performed
+	- Then: the result, that is testable.
+
+There can be multiple givens, whens and thens.
+
+Eg. Given I go to google.com, when I type cats into the searchbar then
+	I will be displayed a webpage of cats and so on
+
+						Surefire Reports:
+
+

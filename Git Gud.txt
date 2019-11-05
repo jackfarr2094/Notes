@@ -1,0 +1,30 @@
+Git Gud:
+
+Git is a Version Control System (VCS).
+
+Git repsoitories; places where you send and retrieve work. They can be local (on your pc) or remote
+on somewhere like Github or bitbucket. Remote repositories are extremely useful on projects where there
+are multiple people working on it at different times.
+
+Workflows like this enable users to commit and pull and work on projects flexibily.
+
+"Touch" is a unix command to create a file.
+camelCase - naming syntax for naming methods and variables in Java. E.g. whadupMydude
+also a syntax: PascalCase - WhadupMyDude, snake_case - whadup_my_dude, and kebab-case: whadup-my-dude
+
+"git init": initialise the local git repository
+git add . : add folder
+"git status": see what is in your git repository
+"git commit -m", add -m so the terminal doesn't go to the text editor screen once you commit. -m will
+also allow you add a message to your commit for GitHub.
+"." means this folder, so "git add ." add this folder to be commit.
+
+LF = Line Feed, pull the paper down
+CR - Carriage return
+CRLF - Carriage Return Line Feed, an old typewriter term windows use for creating new lines.
+
+To use remote repository: "git remote add origin [repository url]
+				"git push -u origin master"
+IN THEORY it should work but it isn't today...
+
+

@@ -1,0 +1,42 @@
+Arrays:
+
+Arrays are a variable which can stores more than one value. They have multiple locations in 
+which you declare to stores values.
+
+Numbers [0] = 15, stores 15 in location 0 of the array Numbers. 
+To recall an array: Result = Numbers [0];
+To declare an array: int Numbers [] = new int [10]; declares an array with 10 locations
+of integers/
+
+Arrays are fixed size once set up. You cannot remove or add locations to an array.
+Array lists are like an array but you can add or remove locations.
+
+for (i=0; i < 100; i++){
+	System.out.println(Numbers [i]);
+	}
+
+	This code creates an array of numbers 0-99, stored in the array "Numbers".
+
+for (i=0; i < Numbers.length; i++){
+	System.out.println(Numbers [i]);
+	}
+
+	Gives you the number of values in the array.
+
+Example code:
+
+	class QaConsulting1 {
+	public static void main (String xyz[])	 <---- Java will look for a string array
+	int i;
+	for (i=0; i < xyz.length; i++) {
+	System.out.println([xyz]);
+	}
+
+		class QaConsulting1 {
+	public static void main (String[] xyz) <---- String will still be the array
+
+(Download  Sublime and do the following in the Command Prompt
+
+ javac QAConsulting1.java
+Java QAConsulting1 15 Shafeeq Java abc
+		

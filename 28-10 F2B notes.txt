@@ -1,0 +1,32 @@
+XMLHTTPRequest:
+
+- Front end to back end connection.
+- Can be done with an XMLHTTPRequest
+- Fetch
+- or Axion
+
+Using either of these methods it will talk to your back end via that URL. The back end will then talk to the database
+using info from the application.properties.
+
+
+An example in HTML:
+
+<html>
+<head>
+</head>
+<script>
+let request = new XMLHttpRequest();
+request.open ("GET", "https://gist.githubusercontent.com/mariodev12/a923f2b651a005ca3ca7f851141efcbc/raw/39b06a32e4a58fc1fe63c7478a97edccd21138f1/superheroes.json");
+request.onload = function() {
+    console.log(request.response);
+	}
+request.send();
+</script>
+</html>
+
+
+CORS Issues:
+
+Cross Origin Resource Sharing.
+- Only allows specific places to access a server.
+- Add "@CrossOrigin*" in your RestController.

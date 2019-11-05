@@ -1,0 +1,3 @@
+Database layout:
+
+URL Text(50) 		Name Char(50)		SubGenre Char(20)	Featured Artist Char(50)	
